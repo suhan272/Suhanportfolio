@@ -6,150 +6,149 @@
     <title>Suhan Jangiti - Portfolio</title>
     <meta name="description" content="Portfolio of Suhan Jangiti, an AI & ML Enthusiast and Web Developer.">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="bg-animation"></div>
     
     <nav class="glass-nav">
-        <div class="logo">SJ.</div>
+        <div class="logo">
+            <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0ZM26.4 28H13.6V24.8H18.4V15.2H13.6V12H26.4V15.2H21.6V24.8H26.4V28Z" fill="var(--accent)"/>
+            </svg>
+            SJ.
+        </div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
         </ul>
     </nav>
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="glass-panel slide-up">
+        <section id="hero" class="fade-in">
             <div class="hero-content">
-                <h1 class="glitch" data-text="SUHAN JANGITI">SUHAN JANGITI</h1>
-                <h2 class="subtitle">AI & ML Enthusiast | Web Developer</h2>
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> bunnyjangiti165@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> 7569352506</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="glass-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="glass-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="developer_avatar.png" alt="Developer Placeholder" class="glass-img">
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="glass-panel fade-in">
-            <h2><i class="fas fa-user"></i> About Me</h2>
-            <p>Motivated B.Tech Computer Science Engineering (AI & ML) student with strong academic performance (CGPA: 8.98) and foundational knowledge in programming, data structures, and web development. Interested in Artificial Intelligence, Machine Learning, and Software Development. Seeking an internship opportunity to apply technical skills, contribute to innovative projects, and gain hands-on research and development experience.</p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="glass-panel fade-in">
-            <h2><i class="fas fa-code"></i> Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="glass-tag">Java</span>
-                        <span class="glass-tag">C</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <div class="skill-tags">
-                        <span class="glass-tag">HTML</span>
-                        <span class="glass-tag">CSS</span>
-                        <span class="glass-tag">JavaScript (Basics)</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skill-tags">
-                        <span class="glass-tag">VS Code</span>
-                        <span class="glass-tag">Code Blocks</span>
-                        <span class="glass-tag">Jupyter Notebook</span>
-                        <span class="glass-tag">Git (Basic)</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-tags">
-                        <span class="glass-tag">Problem Solving</span>
-                        <span class="glass-tag">Teamwork</span>
-                        <span class="glass-tag">Communication</span>
-                        <span class="glass-tag">Adaptability</span>
-                        <span class="glass-tag">Quick Learning</span>
+                <h1 class="hero-title">Suhan<br>Jangiti.</h1>
+                <p class="hero-subtitle">B.Tech CSE (AI & ML) Student & Web Developer based in India.</p>
+                
+                <div class="hero-contact">
+                    <a href="mailto:bunnyjangiti165@gmail.com" class="contact-link">bunnyjangiti165@gmail.com</a>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="glass-panel fade-in">
-            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-            <div class="project-card glass-panel-inner">
-                <h3>Lost Linker</h3>
-                <p class="project-desc">A web-based lost-and-found application designed to help users report and recover lost items efficiently.</p>
-                <h4>My Contribution:</h4>
-                <ul class="project-bullets">
-                    <li>Developed under the guidance of seniors and faculty.</li>
-                    <li>Actively participated in understanding requirements and system design.</li>
-                    <li>Contributed to frontend development and basic backend integration.</li>
-                    <li>Learned full project lifecycle and teamwork practices.</li>
-                </ul>
-                <div class="tech-stack">
-                    <span class="glass-tag small">HTML</span>
-                    <span class="glass-tag small">CSS</span>
-                    <span class="glass-tag small">JavaScript</span>
-                    <span class="glass-tag small">Backend Framework</span>
-                    <span class="glass-tag small">MongoDB</span>
-                </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="hero-backdrop"></div>
+                <img src="developer_avatar.png" alt="Suhan Jangiti" class="hero-img">
             </div>
         </section>
 
-        <!-- Education & Achievements -->
-        <section id="education" class="glass-panel fade-in">
-            <div class="two-col">
-                <div class="col">
-                    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4>B.Tech in CSE (AI & ML)</h4>
-                            <p class="timeline-date">Aug 2024 - 2028</p>
-                            <p>CMR College of Engineering and Technology</p>
-                            <p class="highlight">CGPA: 8.98 (1st Year)</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h4>Intermediate (MPC)</h4>
-                            <p class="timeline-date">2022 - 2024</p>
-                            <p>Sigma Junior College, Hanamkonda</p>
-                            <p class="highlight">Score: 98.6%</p>
-                        </div>
+        <!-- Stats Section -->
+        <section id="stats" class="fade-in">
+            <div class="stat-block">
+                <h3>8.98</h3>
+                <p>Current CGPA<br>(1st Year)</p>
+            </div>
+            <div class="stat-block">
+                <h3>98.6<span class="small-text">%</span></h3>
+                <p>Intermediate<br>(MPC)</p>
+            </div>
+            <div class="stat-block">
+                <h3 class="text-accent">AI/ML</h3>
+                <p>Primary Focus &<br>Exploration</p>
+            </div>
+        </section>
+
+        <!-- Grid Layout for Content -->
+        <section id="about" class="content-grid fade-in">
+            <!-- Left Column: About & Education -->
+            <div class="grid-col">
+                <div class="grid-card glass-panel">
+                    <p class="section-label">01 — About Me</p>
+                    <h2 class="card-title">Motivated student with strong foundational knowledge.</h2>
+                    <p class="card-text">I am a B.Tech Computer Science Engineering student specializing in AI & ML. I'm passionate about Artificial Intelligence, Machine Learning, and Software Development. I am seeking opportunities to apply my technical skills, contribute to innovative projects, and gain hands-on R&D experience.</p>
+                </div>
+
+                <div class="grid-card solid-dark">
+                    <p class="section-label">02 — Education</p>
+                    <div class="edu-item">
+                        <h4>CMR College of Engineering and Technology</h4>
+                        <p class="edu-date">Aug 2024 - 2028</p>
+                        <p class="card-text-small">B.Tech in CSE (AI & ML)</p>
+                    </div>
+                    <div class="edu-item mt-4">
+                        <h4>Sigma Junior College, Hanamkonda</h4>
+                        <p class="edu-date">2022 - 2024</p>
+                        <p class="card-text-small">Intermediate (MPC)</p>
                     </div>
                 </div>
-                <div class="col">
-                    <h2><i class="fas fa-trophy"></i> Achievements & Activities</h2>
-                    <ul class="achievement-list">
-                        <li>Selected for Final Round – 24-Hour Hackathon (2026) and collaborated with a team to build a prototype software solution.</li>
-                        <li>Practicing data structures and algorithm problems to improve problem-solving ability.</li>
-                        <li>Exploring Artificial Intelligence and Machine Learning fundamentals.</li>
-                        <li>Building small web development projects for skill improvement.</li>
+            </div>
+
+            <!-- Right Column: Skills & Projects -->
+            <div class="grid-col" id="projects">
+                <!-- Highlight Card -->
+                <div class="grid-card accent-card">
+                    <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h2 class="card-title">Lost Linker</h2>
+                    <p class="card-text">A web-based lost-and-found application designed to help users report and recover lost items efficiently.</p>
+                    <ul class="clean-list">
+                        <li>Contributed to frontend & basic backend.</li>
+                        <li>Full project lifecycle experience.</li>
                     </ul>
+                    <div class="tech-stack-minimal">
+                        <span>HTML</span><span>CSS</span><span>JS</span><span>MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Skills Grid within the right column -->
+                <div class="skills-mini-grid">
+                    <div class="grid-card solid-dark">
+                        <div class="card-icon"><i class="fas fa-code"></i></div>
+                        <h4>Languages</h4>
+                        <p class="card-text-small">Java, C</p>
+                    </div>
+                    <div class="grid-card solid-dark">
+                        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>Web Dev</h4>
+                        <p class="card-text-small">HTML, CSS, JS</p>
+                    </div>
+                    <div class="grid-card solid-dark">
+                        <div class="card-icon"><i class="fas fa-tools"></i></div>
+                        <h4>Tools</h4>
+                        <p class="card-text-small">VS Code, Git, Jupyter</p>
+                    </div>
+                    <div class="grid-card solid-dark">
+                        <div class="card-icon"><i class="fas fa-users"></i></div>
+                        <h4>Soft Skills</h4>
+                        <p class="card-text-small">Problem Solving, Teamwork</p>
+                    </div>
                 </div>
             </div>
         </section>
+        
+        <!-- Bottom Achievements Section -->
+        <section id="achievements" class="grid-card glass-panel fade-in mb-5">
+            <div class="two-col-inline">
+                <div>
+                    <h2 class="card-title">Achievements & Activities</h2>
+                    <p class="card-text">Continuous learning and competitive participation.</p>
+                </div>
+                <ul class="clean-list large-list">
+                    <li><i class="fas fa-check text-accent"></i> Selected for Final Round – 24-Hour Hackathon (2026).</li>
+                    <li><i class="fas fa-check text-accent"></i> Actively practicing DSA to improve problem-solving.</li>
+                    <li><i class="fas fa-check text-accent"></i> Building small web projects for skill improvement.</li>
+                </ul>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="glass-footer">
-        <p>&copy; <span id="year"></span> Suhan Jangiti. Built with <i class="fas fa-heart text-pink"></i> and Glassmorphism.</p>
+    <footer class="minimal-footer">
+        <p>&copy; <span id="year"></span> Suhan Jangiti.</p>
     </footer>
 
     <script src="script.js"></script>
