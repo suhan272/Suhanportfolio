@@ -10,51 +10,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="bg-animation"></div>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Ambient Background -->
+    <div class="bg-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
     
-    <nav class="glass-nav">
-        <div class="logo">
+    <nav class="glass-nav fade-in">
+        <div class="logo hover-target">
             <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0ZM26.4 28H13.6V24.8H18.4V15.2H13.6V12H26.4V15.2H21.6V24.8H26.4V28Z" fill="var(--accent)"/>
             </svg>
             SJ.
         </div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about" class="hover-target">About</a></li>
+            <li><a href="#projects" class="hover-target">Projects</a></li>
         </ul>
     </nav>
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="fade-in">
+        <section id="hero">
             <div class="hero-content">
-                <h1 class="hero-title">Suhan<br>Jangiti.</h1>
-                <p class="hero-subtitle">B.Tech CSE (AI & ML) Student & Web Developer based in India.</p>
+                <h1 class="hero-title">
+                    <span class="reveal-wrapper"><span class="reveal-text delay-1">Suhan</span></span><br>
+                    <span class="reveal-wrapper"><span class="reveal-text delay-2">Jangiti.</span></span>
+                </h1>
+                <p class="hero-subtitle fade-in delay-3">B.Tech CSE (AI & ML) Student & Web Developer based in India.</p>
                 
-                <div class="hero-contact">
-                    <a href="mailto:bunnyjangiti165@gmail.com" class="contact-link">bunnyjangiti165@gmail.com</a>
+                <div class="hero-contact fade-in delay-4">
+                    <a href="mailto:bunnyjangiti165@gmail.com" class="contact-link hover-target">bunnyjangiti165@gmail.com</a>
                     <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="hover-target"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub" class="hover-target"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
             
-            <div class="hero-image-wrapper">
+            <div class="hero-image-wrapper fade-in delay-3">
                 <div class="hero-backdrop"></div>
-                <img src="developer_avatar.png" alt="Suhan Jangiti" class="hero-img">
+                <img src="developer_avatar.png" alt="Suhan Jangiti" class="hero-img hover-target">
             </div>
         </section>
+
+        <!-- Infinite Marquee -->
+        <div class="marquee-container fade-in">
+            <div class="marquee">
+                <span>AI & ML ENTHUSIAST <i class="fas fa-star"></i> WEB DEVELOPER <i class="fas fa-star"></i> PROBLEM SOLVER <i class="fas fa-star"></i></span>
+                <span>AI & ML ENTHUSIAST <i class="fas fa-star"></i> WEB DEVELOPER <i class="fas fa-star"></i> PROBLEM SOLVER <i class="fas fa-star"></i></span>
+                <span>AI & ML ENTHUSIAST <i class="fas fa-star"></i> WEB DEVELOPER <i class="fas fa-star"></i> PROBLEM SOLVER <i class="fas fa-star"></i></span>
+            </div>
+        </div>
 
         <!-- Stats Section -->
         <section id="stats" class="fade-in">
             <div class="stat-block">
-                <h3>8.98</h3>
+                <h3><span class="counter" data-target="8.98">0.00</span></h3>
                 <p>Current CGPA<br>(1st Year)</p>
             </div>
             <div class="stat-block">
-                <h3>98.6<span class="small-text">%</span></h3>
+                <h3><span class="counter" data-target="98.6">0.0</span><span class="small-text">%</span></h3>
                 <p>Intermediate<br>(MPC)</p>
             </div>
             <div class="stat-block">
@@ -64,16 +84,16 @@
         </section>
 
         <!-- Grid Layout for Content -->
-        <section id="about" class="content-grid fade-in">
+        <section id="about" class="content-grid">
             <!-- Left Column: About & Education -->
             <div class="grid-col">
-                <div class="grid-card glass-panel">
+                <div class="grid-card glass-panel spotlight-card fade-in">
                     <p class="section-label">01 — About Me</p>
                     <h2 class="card-title">Motivated student with strong foundational knowledge.</h2>
                     <p class="card-text">I am a B.Tech Computer Science Engineering student specializing in AI & ML. I'm passionate about Artificial Intelligence, Machine Learning, and Software Development. I am seeking opportunities to apply my technical skills, contribute to innovative projects, and gain hands-on R&D experience.</p>
                 </div>
 
-                <div class="grid-card solid-dark">
+                <div class="grid-card solid-dark spotlight-card fade-in">
                     <p class="section-label">02 — Education</p>
                     <div class="edu-item">
                         <h4>CMR College of Engineering and Technology</h4>
@@ -91,7 +111,7 @@
             <!-- Right Column: Skills & Projects -->
             <div class="grid-col" id="projects">
                 <!-- Highlight Card -->
-                <div class="grid-card accent-card">
+                <div class="grid-card accent-card spotlight-card fade-in hover-target">
                     <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
                     <h2 class="card-title">Lost Linker</h2>
                     <p class="card-text">A web-based lost-and-found application designed to help users report and recover lost items efficiently.</p>
@@ -104,24 +124,24 @@
                     </div>
                 </div>
 
-                <!-- Skills Grid within the right column -->
+                <!-- Skills Mini Grid -->
                 <div class="skills-mini-grid">
-                    <div class="grid-card solid-dark">
+                    <div class="grid-card solid-dark spotlight-card fade-in delay-1">
                         <div class="card-icon"><i class="fas fa-code"></i></div>
                         <h4>Languages</h4>
                         <p class="card-text-small">Java, C</p>
                     </div>
-                    <div class="grid-card solid-dark">
+                    <div class="grid-card solid-dark spotlight-card fade-in delay-2">
                         <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
                         <h4>Web Dev</h4>
                         <p class="card-text-small">HTML, CSS, JS</p>
                     </div>
-                    <div class="grid-card solid-dark">
+                    <div class="grid-card solid-dark spotlight-card fade-in delay-3">
                         <div class="card-icon"><i class="fas fa-tools"></i></div>
                         <h4>Tools</h4>
                         <p class="card-text-small">VS Code, Git, Jupyter</p>
                     </div>
-                    <div class="grid-card solid-dark">
+                    <div class="grid-card solid-dark spotlight-card fade-in delay-4">
                         <div class="card-icon"><i class="fas fa-users"></i></div>
                         <h4>Soft Skills</h4>
                         <p class="card-text-small">Problem Solving, Teamwork</p>
@@ -131,7 +151,7 @@
         </section>
         
         <!-- Bottom Achievements Section -->
-        <section id="achievements" class="grid-card glass-panel fade-in mb-5">
+        <section id="achievements" class="grid-card glass-panel spotlight-card fade-in mb-5">
             <div class="two-col-inline">
                 <div>
                     <h2 class="card-title">Achievements & Activities</h2>
