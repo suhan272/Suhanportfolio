@@ -100,6 +100,7 @@ body {
     font-weight: 800;
     background: linear-gradient(to right, var(--accent-secondary), var(--accent));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -183,6 +184,7 @@ h2 {
     line-height: 1.1;
     background: linear-gradient(to right, #fff, var(--accent-secondary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
